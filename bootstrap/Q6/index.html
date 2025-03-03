@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Modern Webpage</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        
+        body {
+            background: url('https://images.pexels.com/photos/188035/pexels-photo-188035.jpeg?cs=srgb&dl=pexels-ingo-188035.jpg&fm=jpg') no-repeat center center/cover;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            background: url('https://images.unsplash.com/photo-1625225230517-7426c1be750c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGZvcm18ZW58MHx8MHx8fDA%3D') center/cover;
+        }
+
+        
+        .card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            border-radius: 15px;
+            overflow: hidden;
+            border: none;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+       
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .modal-content {
+            background: rgba(255, 255, 255, 0.2); 
+            backdrop-filter: blur(10px); 
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+
+        
+        .container {
+            padding-top: 50px;
+        }
+
+        
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+            border-radius: 8px;
+            padding: 10px 20px;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .btn-custom:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+   
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">NexaTech</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Web Development</a></li>
+                            <li><a class="dropdown-item" href="#">SEO Optimization</a></li>
+                            <li><a class="dropdown-item" href="#">Graphic Design</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-primary ms-3" data-bs-toggle="modal" data-bs-target="#signupModal">
+                            Sign Up
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   
+    <div class="container">
+        <h2 class="text-center text-black mb-4">Our Services</h2>
+
+        <div class="row g-4">
+            
+            <div class="col-md-6 col-lg-3">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfEg9Rr_4FMAPy0plj5bInycP9a9rhvJM6Zw&s" class="card-img-top" alt="Web Development">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Web Development</h5>
+                        <p class="card-text">Modern and responsive websites tailored to your needs.</p>
+                        <a href="#" class="btn btn-custom">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+         
+            <div class="col-md-6 col-lg-3">
+                <div class="card">
+                    <img src="https://static.vecteezy.com/system/resources/previews/027/577/433/non_2x/search-engine-optimization-seo-concept-on-dark-blue-background-vector.jpg" class="card-img-top" alt="SEO Optimization">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">SEO Optimization</h5>
+                        <p class="card-text">Boost your online presence and increase organic traffic.</p>
+                        <a href="#" class="btn btn-custom">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+          
+            <div class="col-md-6 col-lg-3">
+                <div class="card">
+                    <img src="https://t4.ftcdn.net/jpg/02/20/25/73/360_F_220257363_IhKUbDvJpDUtbvyPvIAnmCBQQAuQ1kl9.jpg" class="card-img-top" alt="Graphic Design">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Graphic Design</h5>
+                        <p class="card-text">Create stunning visuals and brand identities.</p>
+                        <a href="#" class="btn btn-custom">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+         
+            <div class="col-md-6 col-lg-3">
+                <div class="card">
+                    <img src="https://media.istockphoto.com/id/1346575545/photo/3d-render-of-social-media-business-concept.jpg?s=612x612&w=0&k=20&c=1083IFHVsot9K6aguY59kOLCWIijhPQT69oYJB9SYS0=" class="card-img-top" alt="Social Media Marketing">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Social Media Marketing</h5>
+                        <p class="card-text">Grow your brand with targeted campaigns and engagement.</p>
+                        <a href="#" class="btn btn-custom">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label"><b>Name</b></label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label"><b>Email</b></label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label"><b>Password</b></label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

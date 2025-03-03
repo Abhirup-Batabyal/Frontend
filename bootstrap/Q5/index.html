@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product Showcase - NexaTech</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+       
+        body {
+            background: url('https://images.pexels.com/photos/188035/pexels-photo-188035.jpeg?cs=srgb&dl=pexels-ingo-188035.jpg&fm=jpg') no-repeat center center/cover;
+            min-height: 100vh;
+        }
+
+       
+        .card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            border-radius: 15px;
+            overflow: hidden;
+            border: none;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+       
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+       
+        .container {
+            padding-top: 50px;
+        }
+
+        
+        .btn-learn {
+            background-color: #007bff;
+            color: white;
+            border-radius: 8px;
+            padding: 10px 20px;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .btn-learn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2 class="text-center text-black mb-4">Services</h2>
+
+        <div class="row g-4">
+           
+            <div class="col-md-6 col-lg-3">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfEg9Rr_4FMAPy0plj5bInycP9a9rhvJM6Zw&s" class="card-img-top" alt="Web Development">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Web Development</h5>
+                        <p class="card-text">Modern and responsive websites tailored to your needs.</p>
+                        <a href="#" class="btn btn-learn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+        
+            <div class="col-md-6 col-lg-3">
+                <div class="card">
+                    <img src="https://static.vecteezy.com/system/resources/previews/027/577/433/non_2x/search-engine-optimization-seo-concept-on-dark-blue-background-vector.jpg" class="card-img-top" alt="SEO Optimization">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">SEO Optimization</h5>
+                        <p class="card-text">Boost your online presence and increase organic traffic.</p>
+                        <a href="#" class="btn btn-learn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div class="col-md-6 col-lg-3">
+                <div class="card">
+                    <img src="https://t4.ftcdn.net/jpg/02/20/25/73/360_F_220257363_IhKUbDvJpDUtbvyPvIAnmCBQQAuQ1kl9.jpg" class="card-img-top" alt="Graphic Design">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Graphic Design</h5>
+                        <p class="card-text">Create stunning visuals and brand identities.</p>
+                        <a href="#" class="btn btn-learn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div class="col-md-6 col-lg-3">
+                <div class="card">
+                    <img src="https://media.istockphoto.com/id/1346575545/photo/3d-render-of-social-media-business-concept.jpg?s=612x612&w=0&k=20&c=1083IFHVsot9K6aguY59kOLCWIijhPQT69oYJB9SYS0=" class="card-img-top" alt="Social Media Marketing">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Social Media Marketing</h5>
+                        <p class="card-text">Grow your brand with targeted campaigns and engagement.</p>
+                        <a href="#" class="btn btn-learn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
